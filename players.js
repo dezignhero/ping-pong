@@ -1,5 +1,5 @@
 var PLAYERS = {
-	'alexlea' : {
+	'alea' : {
 		name : 'Alex Lea',
 		group : 'A'
 	},
