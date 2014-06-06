@@ -1,9 +1,10 @@
 var Tournament = function() {
 	// Properties
-	var format = {
-		'A' : 2,
-		'B' : 3
-	};
+	var gameLimit = 8,
+		format = {
+			'A' : 2,
+			'B' : 3
+		};
 
 	// Methods
 	var generateMatches = function(players) {
@@ -12,6 +13,7 @@ var Tournament = function() {
 		// Format player data object
 		for (var key in players) {
 			players[key].matches = { A : [], B : [] };
+			players[key].played = 0;
 		}
 
 		// Generate matchups
@@ -24,11 +26,18 @@ var Tournament = function() {
 				while ( player.matches[g].length < format[g] ) {
 					var candidate = groups[g][randomNumber(groups[g].length)],
 						candidateMatches = players[candidate].matches[player.group];
+					
 					// Ensure not yourself and not pre-existing somewhere
 					if ( candidate != key && !inArray(candidate, player.matches[g]) && !inArray(key, candidateMatches) ) {
-						player.matches[g].push(candidate);
-						if ( candidateMatches.length < format[player.group] ) {
-							candidateMatches.push(key);
+						// Ignore if already used too many times
+						if ( players[candidate].played < gameLimit ) {
+							player.matches[g].push(candidate);
+							player.played++;
+							players[candidate].played++;
+							// Only push if limit not reached
+							if ( candidateMatches.length < format[player.group] ) {
+								candidateMatches.push(key);
+							}	
 						}
 					}
 				}
