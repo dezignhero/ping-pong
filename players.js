@@ -43,6 +43,10 @@ var PLAYERS = {
 		name : 'Cindy Ly',
 		group : 'B'
 	},
+	'dchang' : {
+		name : 'Derek Chang',
+		group : 'A'
+	},
 	'dchoi' : {
 		name : 'Damond Choi',
 		group : 'B'

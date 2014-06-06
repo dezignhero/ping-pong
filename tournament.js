@@ -1,6 +1,6 @@
 var Tournament = function() {
 	// Properties
-	var gameLimit = 8,
+	var gameLimit = 7, // Too low and this will freeze the program
 		format = {
 			'A' : 2,
 			'B' : 3
