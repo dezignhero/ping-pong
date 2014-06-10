@@ -22,7 +22,7 @@
 }());
 
 // Place any jQuery/helper plugins in here.]
-$('td.player').hover(function(){
+$('td[data-key]').hover(function(){
 	var player = $(this).attr('data-key');
 	$('[data-key='+player+']').addClass('highlight');
 },function(){

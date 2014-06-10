@@ -19,15 +19,14 @@ var Tournament = function() {
 
 		// Generate matchups
 		for (var key in players) {
-			var player = players[key],
-				matchList = player.name+' | ';
+			var player = players[key];
 
 			// Generate group matches
-			for ( var g in format ) {			
+			for ( var g in format ) {
 				while ( player.matches[g].length < format[g] ) {
 					var candidate = groups[g][randomNumber(groups[g].length)],
 						candidateMatches = players[candidate].matches[player.group];
-					
+
 					// Ensure not yourself and not pre-existing somewhere
 					if ( candidate != key && !inArray(candidate, player.matches[g]) && !inArray(key, candidateMatches) ) {
 						// Ignore if already used too many times
@@ -38,15 +37,11 @@ var Tournament = function() {
 							// Only push if limit not reached
 							if ( candidateMatches.length < format[player.group] ) {
 								candidateMatches.push(key);
-							}	
+							}
 						}
 					}
 				}
-
-				matchList += player.matches[g]+' ';
 			}
-
-			// console.log(matchList);
 		}
 
 		return players;
@@ -76,7 +71,7 @@ var Tournament = function() {
 		for (var key in data) {
 			var player = data[key],
 				htmlOutput = "<tr><td class='player' data-key='"+key+"'>"+player.name+"</td>";
-			
+
 			for (var g in player.matches) {
 				var group = player.matches[g];
 				for (var i=0, e=group.length; i<e; i++) {
