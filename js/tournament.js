@@ -46,7 +46,7 @@ var Tournament = function() {
 				matchList += player.matches[g]+' ';
 			}
 
-			console.log(matchList);
+			// console.log(matchList);
 		}
 
 		return players;
@@ -68,6 +68,30 @@ var Tournament = function() {
 		return groups;
 	},
 
+	printMatchups = function(players) {
+		var data = generateMatches(players),
+			finalOutput = "";
+
+		// Format player data object
+		for (var key in data) {
+			var player = data[key],
+				htmlOutput = "<tr><td class='player' data-key='"+key+"'>"+player.name+"</td>";
+			
+			for (var g in player.matches) {
+				var group = player.matches[g];
+				for (var i=0, e=group.length; i<e; i++) {
+					htmlOutput += "<td data-key='"+group[i]+"'>"+players[group[i]].name+"</td>";
+				}
+			}
+			htmlOutput += "</tr>"
+
+			// Final output
+			finalOutput += htmlOutput;
+		}
+
+		document.getElementById('Games').innerHTML += finalOutput;
+	},
+
 	randomNumber = function(limit) {
 		return Math.floor( Math.random()*limit );
 	},
@@ -83,7 +107,7 @@ var Tournament = function() {
 
 	// Public
 	return {
-		matchup : generateMatches,
+		matchup : printMatchups,
 		groups : groups
 	}
 };
