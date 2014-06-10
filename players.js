@@ -15,6 +15,10 @@ var PLAYERS = {
 		name : 'Andrew Chan',
 		group : 'A'
 	},
+	'atabrizi' : {
+		name : 'AR Tabrizi',
+		group : 'A'
+	},
 	'bli' : {
 		name : 'Bowen Li',
 		group : 'B'
@@ -43,13 +47,13 @@ var PLAYERS = {
 		name : 'Cindy Ly',
 		group : 'B'
 	},
-	'dchang' : {
-		name : 'Derek Chang',
-		group : 'A'
-	},
 	'dchoi' : {
 		name : 'Damond Choi',
 		group : 'B'
+	},
+	'dchang' : {
+		name : 'Derek Chang',
+		group : 'A'
 	},
 	'eclark' : {
 		name : 'Erin Clark',
@@ -79,6 +83,10 @@ var PLAYERS = {
 		name : 'Jan Stammnitz',
 		group : 'B'
 	},
+	'jcamou' : {
+		name : 'Jesus Camou',
+		group : 'B'
+	},
 	'jramos' : {
 		name : 'Joe Ramos',
 		group : 'B'
@@ -103,13 +111,25 @@ var PLAYERS = {
 		name : 'Mia Zhang',
 		group : 'B'
 	},
+	'msugarman' : {
+		name : 'Michael Sugarman',
+		group : 'B'
+	},
 	'npurcell' : {
 		name : 'Nichole Purcell',
+		group : 'B'
+	},
+	'nalmeida' : {
+		name : 'Nikhil Almeida',
 		group : 'B'
 	},
 	'pschwartz' : {
 		name : 'Patrick Schwartz',
 		group : 'B'
+	},
+	'pmorse' : {
+		name : 'Parker Morse',
+		group : 'A'
 	},
 	'pgurerrero' : {
 		name : 'Paul Gurerrero',
@@ -123,12 +143,20 @@ var PLAYERS = {
 		name : 'Raquel Villarreal',
 		group : 'B'
 	},
+	'rhunt' : {
+		name : 'Robert Hunt',
+		group : 'B'
+	},
+	'sphomsopha' : {
+		name : 'Sam Phomsopha',
+		group : 'B'
+	},
 	'ssecord' : {
 		name : 'Scott Secord',
 		group : 'A'
 	},
-	'sphomsopha' : {
-		name : 'Sam Phomsopha',
+	'sjupudi' : {
+		name : 'Sashank Jupudi',
 		group : 'B'
 	},
 	'snayak' : {
@@ -145,6 +173,10 @@ var PLAYERS = {
 	},
 	'tkidambi' : {
 		name : 'Tridi Kidambi',
+		group : 'B'
+	},
+	'tnguyen' : {
+		name : 'Tu Nguyen',
 		group : 'B'
 	},
 	'xniega' : {
