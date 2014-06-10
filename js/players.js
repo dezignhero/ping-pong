@@ -55,6 +55,10 @@ var PLAYERS = {
 		name : 'Derek Chang',
 		group : 'A'
 	},
+	'ecohen' : {
+		name : 'Eric Cohen',
+		group : 'B'
+	},
 	'eclark' : {
 		name : 'Erin Clark',
 		group : 'B'
@@ -98,6 +102,10 @@ var PLAYERS = {
 	'jcordoso' : {
 		name : 'Juan Cardoso',
 		group : 'A'
+	},
+	'jchandler' : {
+		name : 'Justin Chandler',
+		group : 'B'
 	},
 	'kkawaguchi' : {
 		name : 'Kevin Kawaguchi',
@@ -169,6 +177,10 @@ var PLAYERS = {
 	},
 	'tedmundson' : {
 		name : 'Tim Edmundson',
+		group : 'B'
+	},
+	'twhite' : {
+		name : 'Tom White',
 		group : 'B'
 	},
 	'tkidambi' : {

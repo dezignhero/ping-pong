@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #444;
 }
 
 html {
@@ -98,8 +98,10 @@ textarea {
    ========================================================================== */
 
 #Games th,
-#Games td { padding: 5px 20px 5px 10px; border-bottom: 1px solid #ccc; }
+#Games td { padding: 5px 20px 5px 10px; border-bottom: 1px solid #ccc; min-width: 140px; }
+#Games:hover { color: #6c6c6c; }
 #Games tr:nth-child(even) { background: #f3f3f3; }
+#Games tr:hover { background: #94FFED; }
 #Games td.player { border-right: 1px solid #ccc; font-weight: bold; }
 
 .highlight { color: red; font-weight: bold; }
