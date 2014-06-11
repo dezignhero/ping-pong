@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 #Games th,
-#Games td { padding: 5px 10px; border-bottom: 1px solid #ccc; min-width: 140px; }
+#Games td { padding: 5px 10px; border-bottom: 1px solid #ccc; min-width: 150px; }
 #Games:hover { color: #6c6c6c; }
 #Games tr:nth-child(even) { background: #f9f9f9; }
 #Games tr:hover { background: #94FFED; }

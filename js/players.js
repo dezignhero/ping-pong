@@ -93,7 +93,7 @@ var PLAYERS = {
 	},
 	'jramos' : {
 		name : 'Joe Ramos',
-		group : 'B'
+		group : 'A'
 	},
 	'jekiz' : {
 		name : 'Jon Ekiz',
@@ -185,7 +185,7 @@ var PLAYERS = {
 	},
 	'tkidambi' : {
 		name : 'Tridi Kidambi',
-		group : 'B'
+		group : 'A'
 	},
 	'tnguyen' : {
 		name : 'Tu Nguyen',
