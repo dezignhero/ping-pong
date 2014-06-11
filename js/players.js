@@ -7,6 +7,10 @@ var PLAYERS = {
 		name : 'Alankar Naik',
 		group : 'B'
 	},
+	'aivanovic' : {
+		name : 'Aleksandar Ivanovic',
+		group : 'B'
+	},
 	'agarcia' : {
 		name : 'Allan Garcia',
 		group : 'B'
@@ -115,6 +119,10 @@ var PLAYERS = {
 		name : 'Kevin Luu',
 		group : 'B'
 	},
+	'mosias' : {
+		name : 'Matthew Osias',
+		group : 'A'
+	},
 	'mzhang' : {
 		name : 'Mia Zhang',
 		group : 'B'
@@ -182,10 +190,6 @@ var PLAYERS = {
 	'twhite' : {
 		name : 'Tom White',
 		group : 'B'
-	},
-	'tkidambi' : {
-		name : 'Tridi Kidambi',
-		group : 'A'
 	},
 	'tnguyen' : {
 		name : 'Tu Nguyen',
