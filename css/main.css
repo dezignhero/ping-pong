@@ -102,6 +102,7 @@ textarea {
 #Games:hover { color: #6c6c6c; }
 #Games tr:nth-child(even) { background: #f3f3f3; }
 #Games tr:hover { background: #94FFED; }
+#Games td { cursor: pointer; }
 #Games td.player { border-right: 1px solid #ccc; font-weight: bold; }
 
 .highlight { color: red; font-weight: bold; }

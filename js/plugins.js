@@ -22,9 +22,8 @@
 }());
 
 // Place any jQuery/helper plugins in here.]
-$('td[data-key]').hover(function(){
+$('td[data-key]').on('click', function(){
+	$('.highlight').removeClass('highlight');
 	var player = $(this).attr('data-key');
 	$('[data-key='+player+']').addClass('highlight');
-},function(){
-	$('.highlight').removeClass('highlight');
 });

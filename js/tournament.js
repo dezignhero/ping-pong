@@ -8,14 +8,20 @@ var Tournament = function() {
 		};
 
 	// Methods
-	var generateMatches = function(players) {
-		var groups = generateGroups(players);
-
+	var init = function(players) {
 		// Format player data object
 		for (var key in players) {
 			players[key].matches = { A : [], B : [] };
 			players[key].played = 0;
 		}
+
+		return players;
+	},
+
+	generateMatches = function(players) {
+		var groups = generateGroups(players);
+
+		players = init(players);
 
 		// Generate matchups
 		for (var key in players) {
@@ -58,7 +64,7 @@ var Tournament = function() {
 			}
 		}
 		// Calculate number of times user is used based on number of players
-		gameLimit = Math.ceil( (groups.A.length + groups.B.length) * format.A / groups.A.length ) + 2;
+		gameLimit = Math.ceil( (groups.A.length + groups.B.length) * format.A / groups.A.length ) + Math.floor( groups.B.length / groups.A.length );
 
 		return groups;
 	},
@@ -70,7 +76,7 @@ var Tournament = function() {
 		// Format player data object
 		for (var key in data) {
 			var player = data[key],
-				htmlOutput = "<tr><td class='player' data-key='"+key+"'>"+player.name+"</td>";
+				htmlOutput = "<tr><td class='player' data-key='"+key+"'>"+player.name+" ("+player.played+")</td>";
 
 			for (var g in player.matches) {
 				var group = player.matches[g];

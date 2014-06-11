@@ -21,7 +21,7 @@ var PLAYERS = {
 	},
 	'bli' : {
 		name : 'Bowen Li',
-		group : 'B'
+		group : 'A'
 	},
 	'bmeltzer' : {
 		name : 'Brock Meltzer',
@@ -73,7 +73,7 @@ var PLAYERS = {
 	},
 	'gshabanov' : {
 		name : 'Greg Shabanov',
-		group : 'B'
+		group : 'A'
 	},
 	'hpacheco' : {
 		name : 'Horacio Pacheco',
