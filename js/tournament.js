@@ -1,6 +1,6 @@
 var Tournament = function() {
 	// Properties
-	var gameLimit = 10, // This is just a default value.  Too low and this will freeze the program
+	var gameLimit = 6, // Too low and this will freeze the program
 		groups = { A : [], B : [] },
 		format = {
 			'A' : 2,
@@ -63,9 +63,6 @@ var Tournament = function() {
 				groups.B.push(key);
 			}
 		}
-		// Calculate number of times user is used based on number of players
-		// gameLimit = Math.ceil( (groups.A.length + groups.B.length) * format.A / groups.A.length ) + Math.floor( groups.B.length / groups.A.length );
-		gameLimit = 7;
 
 		return groups;
 	},
