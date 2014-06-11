@@ -21,9 +21,46 @@
 	}
 }());
 
+var inArray = function(needle, haystack) {
+	for (var i=0, e=haystack.length; i<e; i++){
+		if ( haystack[i] == needle ) {
+			return true;
+		}
+	}
+	return false;
+};
+
 // Place any jQuery/helper plugins in here.]
 $('td[data-key]').on('click', function(){
 	$('.highlight').removeClass('highlight');
 	var player = $(this).attr('data-key');
 	$('[data-key='+player+']').addClass('highlight');
+});
+
+// Validate entries
+$('tr[data-key]').each(function(){
+	var self = $(this),
+		player = self.attr('data-key'),
+		expectedGames = parseInt(self.find('.player span').html()),
+		matches = [];
+
+	// Get own matches
+	self.find('td[data-key]').each(function(i){
+		if ( i > 0 ) {
+			matches.push($(this).attr('data-key'));
+		}
+	});
+
+	// Get individual matches
+	$('td[data-key='+player+']').each(function(){
+		var parent = $(this).parent('tr[data-key]').attr('data-key');
+		if ( parent != player && !inArray(parent, matches) ) {
+			matches.push(parent);
+		}
+	});
+
+	// Mark invalid ones
+	if ( expectedGames != matches.length ) {
+		console.log(player+'('+expectedGames+'): '+matches+'('+matches.length+')');
+	}
 });
