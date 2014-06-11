@@ -64,7 +64,8 @@ var Tournament = function() {
 			}
 		}
 		// Calculate number of times user is used based on number of players
-		gameLimit = Math.ceil( (groups.A.length + groups.B.length) * format.A / groups.A.length ) + Math.floor( groups.B.length / groups.A.length );
+		// gameLimit = Math.ceil( (groups.A.length + groups.B.length) * format.A / groups.A.length ) + Math.floor( groups.B.length / groups.A.length );
+		gameLimit = 7;
 
 		return groups;
 	},
@@ -76,7 +77,7 @@ var Tournament = function() {
 		// Format player data object
 		for (var key in data) {
 			var player = data[key],
-				htmlOutput = "<tr><td class='player' data-key='"+key+"'><strong>"+player.name+"</strong> ("+player.played+")</td>";
+				htmlOutput = "<tr><td class='player' data-key='"+key+"'><strong>"+player.name+"</strong> ("+player.played+") <span class='fr'>"+player.group+"</span></td>";
 
 			for (var g in player.matches) {
 				var group = player.matches[g];

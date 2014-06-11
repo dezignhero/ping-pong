@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
 #Games th,
-#Games td { padding: 5px 20px 5px 10px; border-bottom: 1px solid #ccc; min-width: 140px; }
+#Games td { padding: 5px 10px; border-bottom: 1px solid #ccc; min-width: 140px; }
 #Games:hover { color: #6c6c6c; }
 #Games tr:nth-child(even) { background: #f9f9f9; }
 #Games tr:hover { background: #94FFED; }
@@ -106,6 +106,12 @@ textarea {
 #Games td.player { border-right: 1px solid #ccc; }
 
 .highlight { color: red; font-weight: bold; }
+.fl { float: left; }
+.fr { float: right; }
+.tal { text-align: left; }
+.tac { text-align: center; }
+.tar { text-align: right; }
+.clear { clear: both; }
 
 
 
