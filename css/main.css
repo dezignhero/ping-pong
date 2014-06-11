@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #444;
+    color: #6c6c6c;
 }
 
 html {
@@ -98,14 +98,14 @@ textarea {
    ========================================================================== */
 
 #Games th,
-#Games td { padding: 5px 10px; border-bottom: 1px solid #ccc; min-width: 150px; }
-#Games:hover { color: #6c6c6c; }
+#Games td { padding: 5px 10px; min-width: 150px; }
+#Games tr { display: block; border-bottom: 1px solid #ccc; }
 #Games tr:nth-child(even) { background: #f9f9f9; }
-#Games tr:hover { background: #94FFED; }
+#Games tr:hover { background: #FF6B6B; color: #FFF; }
 #Games td { cursor: pointer; }
 #Games td.player { border-right: 1px solid #ccc; }
 
-.highlight { color: red; font-weight: bold; }
+.highlight { font-weight: bold; background: #556270!important; color: #4ECDC4; }
 .fl { float: left; }
 .fr { float: right; }
 .tal { text-align: left; }

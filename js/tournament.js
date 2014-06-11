@@ -75,7 +75,7 @@ var Tournament = function() {
 		// Format player data object
 		for (var key in data) {
 			var player = data[key],
-				htmlOutput = "<tr><td class='player' data-key='"+key+"'><strong>"+player.name+"</strong> ("+player.played+") <span class='fr'>"+player.group+"</span></td>";
+				htmlOutput = "<tr data-key='"+key+"'><td class='player' data-key='"+key+"'><strong>"+player.name+"</strong> ("+player.played+") <span class='fr'>"+player.group+"</span></td>";
 
 			for (var g in player.matches) {
 				var group = player.matches[g];
