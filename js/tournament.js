@@ -4,7 +4,7 @@ var Tournament = function() {
 		groups = { A : [], B : [] },
 		format = {
 			'A' : 2,
-			'B' : 3
+			'B' : 2
 		};
 
 	// Methods
@@ -76,7 +76,7 @@ var Tournament = function() {
 		// Format player data object
 		for (var key in data) {
 			var player = data[key],
-				htmlOutput = "<tr><td class='player' data-key='"+key+"'>"+player.name+" ("+player.played+")</td>";
+				htmlOutput = "<tr><td class='player' data-key='"+key+"'><strong>"+player.name+"</strong> ("+player.played+")</td>";
 
 			for (var g in player.matches) {
 				var group = player.matches[g];
