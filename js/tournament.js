@@ -30,7 +30,8 @@ var Tournament = function() {
 			// Generate group matches
 			for ( var g in format ) {
 				while ( player.matches[g].length < format[g] ) {
-					var candidate = groups[g][randomNumber(groups[g].length)],
+					var randNum = randomNumber(groups[g].length),
+						candidate = groups[g][randNum],
 						candidateMatches = players[candidate].matches[player.group];
 
 					// Ensure not yourself and not pre-existing somewhere
