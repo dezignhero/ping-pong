@@ -83,10 +83,6 @@ var PLAYERS = {
 		name : 'Horacio Pacheco',
 		group : 'B'
 	},
-	'jnguyen' : {
-		name : 'James Nguyen',
-		group : 'B'
-	},
 	'jstammnitz' : {
 		name : 'Jan Stammnitz',
 		group : 'B'
@@ -137,7 +133,7 @@ var PLAYERS = {
 	},
 	'nalmeida' : {
 		name : 'Nikhil Almeida',
-		group : 'B'
+		group : 'A'
 	},
 	'pschwartz' : {
 		name : 'Patrick Schwartz',
@@ -167,12 +163,16 @@ var PLAYERS = {
 		name : 'Sam Phomsopha',
 		group : 'B'
 	},
+	'sjupudi' : {
+		name : 'Sashank Jupudi',
+		group : 'B'
+	},
 	'ssecord' : {
 		name : 'Scott Secord',
 		group : 'A'
 	},
-	'sjupudi' : {
-		name : 'Sashank Jupudi',
+	'scolo' : {
+		name : 'Shawn Colo',
 		group : 'B'
 	},
 	'snayak' : {
