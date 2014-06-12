@@ -171,6 +171,10 @@ var PLAYERS = {
 		name : 'Scott Secord',
 		group : 'A'
 	},
+	'steramoto' : {
+		name : 'Seiji Teramoto',
+		group : 'B'
+	},
 	'scolo' : {
 		name : 'Shawn Colo',
 		group : 'B'
