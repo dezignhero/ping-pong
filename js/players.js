@@ -15,8 +15,8 @@ var PLAYERS = {
 		name : 'Allan Garcia',
 		group : 'B'
 	},
-	'achan' : {
-		name : 'Andrew Chan',
+	'agrangaard' : {
+		name : 'Andrew Grangaard',
 		group : 'A'
 	},
 	'atabrizi' : {
@@ -73,10 +73,6 @@ var PLAYERS = {
 	},
 	'gseparovich' : {
 		name : 'George Separovich',
-		group : 'A'
-	},
-	'gshabanov' : {
-		name : 'Greg Shabanov',
 		group : 'A'
 	},
 	'hpacheco' : {
